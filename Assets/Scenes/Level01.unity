@@ -466,7 +466,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49d93e22aa31b1c43a31dd4f261af1cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dimensions: 10
+  dimensions: 200
+  Octaves:
+  - speed: {x: 0.5, y: 0.5}
+    scale: {x: 2, y: 2}
+    height: 0.3
+    alternate: 1
+  UVScale: 0
+  oceanScale: 4
 --- !u!4 &244484176
 Transform:
   m_ObjectHideFlags: 0
@@ -475,7 +482,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 244484174}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -400, y: -0.2, z: -400}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -508,7 +515,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 0}
+  - {fileID: 2100000, guid: c328285b2493e564fae17022742549b5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1580,7 +1587,7 @@ MonoBehaviour:
   m_ThrowVelocityScale: 1.5
   m_ThrowAngularVelocityScale: 1
   m_ForceGravityOnDetach: 1
-  m_RetainTransformParent: 1
+  m_RetainTransformParent: 0
   m_AttachPointCompatibilityMode: 0
 --- !u!153 &1058377321
 ConfigurableJoint:
